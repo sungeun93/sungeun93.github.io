@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.flex {
+    display: flex !important;
+    align-items: center;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.wrap {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.on {
+    display: block !important;
+}
+
+.hide {
+    display: none;
+}
+
+

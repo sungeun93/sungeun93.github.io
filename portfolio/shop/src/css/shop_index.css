@@ -1,0 +1,82 @@
+*{
+    margin:0; padding:0; 
+    text-decoration: none; list-style: none;
+}
+.inner{width:1230px; margin:auto;}
+header .header_top{
+    font-size:16px; color:#fff; 
+    background-color:#dbb296; line-height:40px;
+}
+header .header_top .inner:after{
+    content:''; display:block; clear:both;
+}
+header .header_top .left_area{float:left;}
+header .header_top .right_area{float:right;}
+header .header_top ul {display: flex;}
+header .header_top ul li {margin: 20px; font-size: 17px;}
+header .header_top ul li a {color: #fff;}
+header .header_logo{text-align:center;}
+header .header_logo h1{padding:35px 0;}
+header .header_logo h1 a{color:#dbb296; font-size:40px; }
+header nav{border:1px solid #dbb296; border-width:1px 0; background-color:#fff;}
+header nav.fix{position:fixed; left:0; top:0; width:100%; z-index:10;}
+
+/* header nav ul:after{content:''; display:block ;clear:both;}
+header nav ul li{float:left; width:20%; text-align:center;} */
+header nav ul{display:flex; justify-content: space-around;}
+
+header nav ul li a{line-height:40px; color:#000; font-size:16px;}
+/* header Fin */
+
+.main_visual .swiper-slide img{width:100%; display: block;}
+
+/*2. 메인 비쥬얼 페이지네이션 커스텀*/
+.main_visual .swiper-pagination .swiper-pagination-bullet{
+    background-color:#e6e6e6; opacity:1; width:10px; height:10px;
+}
+.main_visual .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color:#000;
+}
+
+.weekly{padding:40px 0 30px;}
+.weekly h3{font-size:24px; text-align:center; margin-bottom:10px;}
+.weekly .tab_menu{text-align: center; margin-bottom:25px;}
+.weekly .tab_menu li{display:inline-block;}
+.weekly .tab_menu li a{font-size:18px; color:#000; padding:0 10px;}
+.weekly .tab_menu li a.active{color:#dbb296; font-weight:600;}
+
+.tab_area .swiper-slide img{width:100%; display:block;}
+.tab_area .swiper-slide:hover dl{
+    opacity:1;
+    transform:translateY(0);
+}
+.tab_area .swiper-slide dl{
+    position:absolute; left:0; bottom:0;
+    background-color:rgba(0,0,0,0.8);
+    width:100%; padding:15px 10px;
+    box-sizing: border-box;
+    color:#fff;
+    transform:translateY(100%);
+    opacity:0; transition:all 1s;
+}   
+/* 
+    dl이 안보이다가 보이게(li에 마우스가 올라가면), 
+    시간은 0.7s
+*/
+.tab_area .swiper-container{
+    display:none;
+}
+.tab_area .swiper-container.active{
+    display:block;
+}
+.tab_area .swiper-slide dl dt{
+    font-size:20px; margin-bottom:10px;
+}
+.tab_area .swiper-slide dl dd{
+    font-size:16px;
+}
+
+#footer{
+    background-color: #dbb296; color:#fff; font-size: 20px;
+    padding:50px 0; text-align: center;
+}

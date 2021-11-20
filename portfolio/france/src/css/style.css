@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+body {
+  overflow-x: hidden; }
+
+h2 {
+  text-align: center;
+  font-size: 30px; }
+
+a {
+  text-decoration: none;
+  color: black;
+  width: 100%; }
+
+.flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.absolute {
+  position: absolute; }
+
+.wrap {
+  width: 80vw;
+  margin: 0 auto; }
+
+.on {
+  display: block !important; }
+
+.hide {
+  display: none; }
+
+main #HOME {
+  height: calc(100vh - 100px);
+  background: url("../../img/main.jpg") no-repeat;
+  background-size: cover; }
+
+main #TOUR {
+  padding-bottom: 80px; }
+  main #TOUR h2 {
+    margin-bottom: 50px; }
+  main #TOUR .swiper {
+    width: 100%; }
+  main #TOUR .swiper-slide {
+    position: relative; }
+    main #TOUR .swiper-slide .textarea {
+      position: absolute;
+      left: 0;
+      display: none;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      z-index: 3;
+      width: 45%;
+      height: 500px;
+      border: 2px solid #d7d1f8;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      margin-bottom: 20px;
+      padding: 30px;
+      background-color: white; }
+      main #TOUR .swiper-slide .textarea dt {
+        font-size: 35px;
+        margin-bottom: 25px;
+        font-weight: bold;
+        text-align: center; }
+      main #TOUR .swiper-slide .textarea dd {
+        font-size: 25px; }
+    main #TOUR .swiper-slide-active .textarea {
+      display: block; }
+    main #TOUR .swiper-slide .imgarea {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 700px !important;
+      height: 500px !important;
+      margin-left: calc(100% - 700px);
+      overflow: hidden; }
+      main #TOUR .swiper-slide .imgarea img {
+        min-width: 100%;
+        min-height: 100%; }
+    main #TOUR .swiper-slide .swiper-slide-shadow {
+      display: none; }
+
+main #RESTAURANT {
+  background-color: #eee; }
+  main #RESTAURANT h2 {
+    padding-top: 40px;
+    margin: 50px 0; }
+  main #RESTAURANT .flex {
+    width: 100vw; }
+    main #RESTAURANT .flex > li {
+      width: 650px;
+      height: 750px;
+      background-size: cover;
+      background-position: center;
+      cursor: pointer; }
+      main #RESTAURANT .flex > li.active {
+        width: 90vw; }
+        main #RESTAURANT .flex > li.active div {
+          display: block; }
+      main #RESTAURANT .flex > li.opacity {
+        width: 5vw; }
+        main #RESTAURANT .flex > li.opacity > div {
+          display: block; }
+      main #RESTAURANT .flex > li > div {
+        display: none;
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding: 40px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
+        main #RESTAURANT .flex > li > div div {
+          display: none; }
+          main #RESTAURANT .flex > li > div div h3 {
+            font-size: 50px; }
+          main #RESTAURANT .flex > li > div div p {
+            margin: 30px 0;
+            font-size: 20px; }
+          main #RESTAURANT .flex > li > div div input {
+            background-color: rgba(255, 255, 255, 0.4);
+            color: white;
+            font-size: 20px;
+            width: 200px;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 50px; }
+            main #RESTAURANT .flex > li > div div input:hover {
+              background-color: rgba(255, 255, 255, 0.7); }
+          main #RESTAURANT .flex > li > div div .res_imgArea {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            main #RESTAURANT .flex > li > div div .res_imgArea li {
+              width: 150px;
+              height: 150px;
+              border-radius: 100%;
+              overflow: hidden;
+              background-size: cover;
+              background-position: center;
+              margin-right: 50px; }
+
+main #SHOPPING .title {
+  font-weight: bold;
+  margin: 200px 0 120px; }
+  main #SHOPPING .title h2 {
+    font-size: 70px; }
+
+main #SHOPPING ul li {
+  width: calc(100%/3); }
+  main #SHOPPING ul li div {
+    height: 375px;
+    background-size: cover;
+    background-position: center; }
+  main #SHOPPING ul li .textArea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50PX;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  main #SHOPPING ul li dl {
+    text-align: center; }
+    main #SHOPPING ul li dl dt {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 30px; }
+    main #SHOPPING ul li dl dd {
+      font-size: 22px;
+      word-break: keep-all; }
+/*# sourceMappingURL=style.css.map */
