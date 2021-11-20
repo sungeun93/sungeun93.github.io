@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: black;
+  width: 100%; }
+
+.flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.absolute {
+  position: absolute; }
+
+.wrap {
+  width: 60vw;
+  margin: 0 auto; }
+
+.on {
+  display: block !important; }
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  height: 100px; }
+  header #header {
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 30px; }
+    header #header ul {
+      width: 250px;
+      height: 100%;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      font-size: 20px; }
+      header #header ul#gnb li {
+        width: 50%;
+        height: 100%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        header #header ul#gnb li a {
+          display: block;
+          height: 100%;
+          line-height: 100px; }
+    header #header#member {
+      text-align: right; }
+    header #header h1 {
+      font-family: 'Caveat', cursive;
+      font-size: 60px; }
+  header #snb {
+    width: 250px;
+    height: 100PX;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none; }
+    header #snb ol {
+      display: block;
+      width: 50%;
+      padding: 20px;
+      padding-right: 0;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      margin: 0; }
+      header #snb ol li {
+        margin: 0; }
+        header #snb ol li a {
+          color: #fff; }
+  header .xi-market {
+    font-size: 25px; }
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  padding: 50px 0; }
+/*# sourceMappingURL=common.css.map */

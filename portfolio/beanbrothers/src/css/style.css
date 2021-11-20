@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: black;
+  width: 100%; }
+
+.flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.absolute {
+  position: absolute; }
+
+.wrap {
+  width: 60vw;
+  margin: 0 auto; }
+
+.on {
+  display: block !important; }
+
+main #main_visual {
+  position: relative;
+  height: calc(100vh - 100px);
+  background: url("../../image/coffee6.jpg"), no-repeat;
+  background-size: cover;
+  background-position: center; }
+  main #main_visual p {
+    font-family: 'Caveat', cursive;
+    font-size: 80px;
+    color: #880303;
+    top: 20%;
+    right: 150px;
+    text-shadow: rgba(255, 255, 255, 0.5) 0 5px 5px; }
+
+main #about figure {
+  padding: 50px; }
+  main #about figure figcaption {
+    overflow: hidden; }
+  main #about figure .imgArea, main #about figure .textArea {
+    position: absolute; }
+  main #about figure .imgArea {
+    width: 1000px;
+    height: 666px;
+    overflow: hidden; }
+    main #about figure .imgArea img {
+      width: 100%;
+      position: absolute; }
+  main #about figure .textArea {
+    width: 1000px;
+    background-color: #fff;
+    font-size: 30px;
+    word-break: keep-all;
+    padding: 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    main #about figure .textArea dt {
+      font-weight: bold;
+      font-size: 50px;
+      margin-bottom: 30px; }
+  main #about figure dl {
+    position: relative;
+    height: 666px; }
+  main #about figure:first-child .imgArea {
+    right: 0; }
+  main #about figure:first-child .textArea {
+    left: 0;
+    text-align: right;
+    top: 400px;
+    z-index: 1; }
+    main #about figure:first-child .textArea dd {
+      padding-right: 30px; }
+  main #about figure:last-child .imgArea {
+    left: 0; }
+    main #about figure:last-child .imgArea img {
+      bottom: -230px; }
+  main #about figure:last-child .textArea {
+    right: 0;
+    top: 400px;
+    z-index: 1; }
+    main #about figure:last-child .textArea dd {
+      padding-left: 30px; }
+
+main #seasonal {
+  margin: 100px 0; }
+  main #seasonal h2, main #seasonal > p {
+    text-align: center; }
+  main #seasonal h2 {
+    font-size: 45px;
+    margin: 40px 0 20px;
+    font-family: 'Caveat', cursive; }
+  main #seasonal > p {
+    font-size: 18px; }
+  main #seasonal .swiper {
+    height: 100%; }
+  main #seasonal .swiper-slide img {
+    width: 400px;
+    height: 400px; }
+  main #seasonal .swiper-slide h4 {
+    font-size: 20px;
+    margin: 0 78px; }
+  main #seasonal .swiper-slide p {
+    font-size: 15px;
+    margin: 10px 92px; }
+  main #seasonal .swiper-slide:last-child p {
+    margin: 10px 50px; }
+  main #seasonal .swiper-pagination {
+    position: static;
+    margin-top: 25px; }
+    main #seasonal .swiper-pagination span {
+      background-color: brown;
+      width: 12px;
+      height: 12px; }
+
+main #service {
+  margin: 150px 0; }
+  main #service .box {
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 250px; }
+  main #service .left_box {
+    border: 2px solid black;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 48%;
+    height: 100%;
+    padding: 35px 40px 55px;
+    line-height: 40px; }
+    main #service .left_box .flex {
+      border: 1px solid #000;
+      height: 50px;
+      width: 300px; }
+    main #service .left_box input {
+      width: 90%;
+      height: 100%;
+      border: none;
+      outline: none;
+      padding: 0 10px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+    main #service .left_box .xi-search {
+      width: 10%;
+      border: none;
+      background-color: transparent;
+      font-size: 20px; }
+  main #service .right_box {
+    border: 2px solid black;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 48%;
+    height: 100%;
+    padding: 35px 40px 55px; }
+    main #service .right_box h1 {
+      margin-bottom: 20px; }
+    main #service .right_box p {
+      line-height: 22px;
+      margin-bottom: 20px; }
+    main #service .right_box a {
+      display: inline-block;
+      margin-right: 20px;
+      background-color: black;
+      color: white;
+      width: 180px;
+      line-height: 50px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      z-index: 3; }
+      main #service .right_box a span {
+        position: relative;
+        z-index: 3; }
+      main #service .right_box a::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: -50px;
+        border-bottom: 50px solid #fff;
+        border-right: 50px solid transparent;
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s; }
+      main #service .right_box a::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: -50px;
+        border-top: 50px solid #fff;
+        border-left: 50px solid transparent;
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s; }
+      main #service .right_box a:hover {
+        border: none;
+        color: black; }
+        main #service .right_box a:hover::before {
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); }
+        main #service .right_box a:hover::after {
+          -webkit-transform: translateX(27%);
+                  transform: translateX(27%); }
+/*# sourceMappingURL=style.css.map */
