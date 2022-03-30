@@ -38,7 +38,6 @@ a {
 
 main #HOME {
   height: calc(100vh - 100px);
-  background: url("../../img/main.jpg") no-repeat;
   background-size: cover; }
 
 main #TOUR {
@@ -154,7 +153,10 @@ main #RESTAURANT {
 
 main #SHOPPING .title {
   font-weight: bold;
-  margin: 200px 0 120px; }
+  margin: 200px 0 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
   main #SHOPPING .title h2 {
     font-size: 70px; }
 
