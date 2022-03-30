@@ -1,0 +1,210 @@
+@import 'config';
+
+main {
+    #HOME { 
+        width: 100%;
+        height: 900px;
+        background-color: rgb(250, 185, 196);
+        position: relative;
+
+        h2 {
+            font-size: 70px;
+            position: absolute;
+            top: 380px;
+            left: 630px;
+            color: rgb(206, 21, 51);
+        }
+    }
+
+    #PROFILE {
+        h3 { 
+            margin: 70px 0;
+        }
+
+        .Area {
+            display: flex;
+
+            .imgArea {
+                width: 50%;
+            }
+
+            img {
+                width: 500px;
+                height: 500px;
+                padding-left: 300px;
+            }
+
+            .textArea {
+                width: 50%;
+    
+                ul {
+                    padding-left: 150px;
+                    
+                    li {
+                        line-height: 50px;
+    
+                        span {
+                            font-size: 35px;
+                        }
+    
+                        i {
+                            font-size: 35px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .about {
+            display: flex;
+            margin-top: 50px;
+
+            .introduce {
+                width: 50%;
+                padding-left: 200px;
+                box-sizing: border-box;
+
+                strong {
+                    font-size: 35px;
+                }
+
+                p {
+                    font-size: 20px;
+                    margin-top: 20px;
+                }
+            }
+
+            .skillbar {
+                width: 50%;
+                padding-left: 150px;
+                box-sizing: border-box;
+                padding-right: 150px;
+
+                .detail {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+
+                    span {
+                        font-size: 20px;
+                    }
+                }
+
+                .bar {
+                    position: relative;
+                    border: 2px solid pink;
+                    border-radius: 20px;
+
+                    div {
+                        position: relative;
+                        width: 0;
+                        height: 15px;
+                        border-radius: 20px;
+                        background-color: pink;
+                    }
+
+                    #html_bar {
+                        animation: html-fill 4s forwards;
+                    }
+                    @keyframes html-fill {
+                        100% {width: 80%;}
+                    }
+
+                    #css_bar {
+                        animation: css_bar 4s forwards;
+                    }
+                    @keyframes css_bar {
+                        100% {width: 80%;}
+                    }
+
+                    #js_bar {
+                        animation: js_bar 4s forwards;
+                    }
+                    @keyframes js_bar {
+                        100% {width: 50%;}
+                    }
+                }
+
+                .skill:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    #PORTFOLIO {
+        h3 {
+            margin: 70px 0;
+        }
+
+        ._area {
+            display: flex;
+
+            .img_area {
+                width: 45%;
+                margin-left: 5%;
+                display: inline-block;
+
+                img {
+                    width: 500px;
+                    height: 400px;
+                }
+            }
+
+            .text_area {
+                width: 45%;
+                padding-left: 5%;
+                margin-top: 20px;
+
+                h4 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 20px;
+                    margin-top: 20px;
+                }
+
+                a {
+                    overflow: hidden;
+                    position: relative;
+                    display: inline-block;
+                    width: 50%;
+                    padding: 10px 0;
+                    font-size: 18px;
+                    border: 1px solid #aaa;
+                    transition: all 0.5s;
+                    text-align: center;
+
+                    &::before {
+                        content: "";
+                        z-index: -1;
+                        position: absolute;
+                        background: pink;
+                        transition: all 1s;
+                        left: 50%;
+                        top: 0;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: 100%;
+                    }
+
+                    &:hover {
+                        color: white;
+                    }
+                    
+                    &:hover::before {
+                        width: 100%;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
+

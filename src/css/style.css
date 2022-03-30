@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+body {
+  overflow-x: hidden; }
+
+h2, h3 {
+  text-align: center;
+  font-size: 50px; }
+
+a {
+  text-decoration: none;
+  color: black;
+  width: 100%; }
+
+main #HOME {
+  width: 100%;
+  height: 900px;
+  background-color: #fab9c4;
+  position: relative; }
+  main #HOME h2 {
+    font-size: 70px;
+    position: absolute;
+    top: 380px;
+    left: 630px;
+    color: #ce1533; }
+
+main #PROFILE h3 {
+  margin: 70px 0; }
+
+main #PROFILE .Area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  main #PROFILE .Area .imgArea {
+    width: 50%; }
+  main #PROFILE .Area img {
+    width: 500px;
+    height: 500px;
+    padding-left: 300px; }
+  main #PROFILE .Area .textArea {
+    width: 50%; }
+    main #PROFILE .Area .textArea ul {
+      padding-left: 150px; }
+      main #PROFILE .Area .textArea ul li {
+        line-height: 50px; }
+        main #PROFILE .Area .textArea ul li span {
+          font-size: 35px; }
+        main #PROFILE .Area .textArea ul li i {
+          font-size: 35px; }
+
+main #PROFILE .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px; }
+  main #PROFILE .about .introduce {
+    width: 50%;
+    padding-left: 200px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    main #PROFILE .about .introduce strong {
+      font-size: 35px; }
+    main #PROFILE .about .introduce p {
+      font-size: 20px;
+      margin-top: 20px; }
+  main #PROFILE .about .skillbar {
+    width: 50%;
+    padding-left: 150px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-right: 150px; }
+    main #PROFILE .about .skillbar .detail {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-bottom: 10px; }
+      main #PROFILE .about .skillbar .detail span {
+        font-size: 20px; }
+    main #PROFILE .about .skillbar .bar {
+      position: relative;
+      border: 2px solid pink;
+      border-radius: 20px; }
+      main #PROFILE .about .skillbar .bar div {
+        position: relative;
+        width: 0;
+        height: 15px;
+        border-radius: 20px;
+        background-color: pink; }
+      main #PROFILE .about .skillbar .bar #html_bar {
+        -webkit-animation: html-fill 4s forwards;
+                animation: html-fill 4s forwards; }
+
+@-webkit-keyframes html-fill {
+  100% {
+    width: 80%; } }
+
+@keyframes html-fill {
+  100% {
+    width: 80%; } }
+      main #PROFILE .about .skillbar .bar #css_bar {
+        -webkit-animation: css_bar 4s forwards;
+                animation: css_bar 4s forwards; }
+
+@-webkit-keyframes css_bar {
+  100% {
+    width: 80%; } }
+
+@keyframes css_bar {
+  100% {
+    width: 80%; } }
+      main #PROFILE .about .skillbar .bar #js_bar {
+        -webkit-animation: js_bar 4s forwards;
+                animation: js_bar 4s forwards; }
+
+@-webkit-keyframes js_bar {
+  100% {
+    width: 50%; } }
+
+@keyframes js_bar {
+  100% {
+    width: 50%; } }
+    main #PROFILE .about .skillbar .skill:not(:last-child) {
+      margin-bottom: 30px; }
+
+main #PORTFOLIO h3 {
+  margin: 70px 0; }
+
+main #PORTFOLIO ._area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  main #PORTFOLIO ._area .img_area {
+    width: 45%;
+    margin-left: 5%;
+    display: inline-block; }
+    main #PORTFOLIO ._area .img_area img {
+      width: 500px;
+      height: 400px; }
+  main #PORTFOLIO ._area .text_area {
+    width: 45%;
+    padding-left: 5%;
+    margin-top: 20px; }
+    main #PORTFOLIO ._area .text_area h4 {
+      font-size: 40px; }
+    main #PORTFOLIO ._area .text_area p {
+      font-size: 20px;
+      margin-top: 20px; }
+    main #PORTFOLIO ._area .text_area a {
+      overflow: hidden;
+      position: relative;
+      display: inline-block;
+      width: 50%;
+      padding: 10px 0;
+      font-size: 18px;
+      border: 1px solid #aaa;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      text-align: center; }
+      main #PORTFOLIO ._area .text_area a::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        background: pink;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+        left: 50%;
+        top: 0;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        width: 0;
+        height: 100%; }
+      main #PORTFOLIO ._area .text_area a:hover {
+        color: white; }
+      main #PORTFOLIO ._area .text_area a:hover::before {
+        width: 100%;
+        z-index: -1; }
+/*# sourceMappingURL=style.css.map */
